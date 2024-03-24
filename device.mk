@@ -164,9 +164,6 @@ PRODUCT_BOOT_JARS += \
     mediatek-framework \
     mediatek-ims-base
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml
-
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0-service \
@@ -257,8 +254,6 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.2.vendor \
     android.hardware.power@1.3.vendor
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # PowerOffAlarm
 PRODUCT_PACKAGES += \
@@ -266,8 +261,6 @@ PRODUCT_PACKAGES += \
 
 # Product characteristics
 PRODUCT_CHARACTERISTICS := default
-
-include $(LOCAL_PATH)/configs/log/vendor_logtag.mk
 
 # Radio
 PRODUCT_PACKAGES += \
