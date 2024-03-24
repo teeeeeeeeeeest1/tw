@@ -144,10 +144,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
     android.hardware.gnss.visibility_control@1.0.vendor
 
-# Health
-PRODUCT_PACKAGES += \
-    android.hardware.health-service.a32 \
-    android.hardware.health-service.a32-recovery
 
 # HIDL
 PRODUCT_PACKAGES += \
